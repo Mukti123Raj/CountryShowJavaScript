@@ -28,7 +28,7 @@ function renderCountryCard(data){
     data.forEach((country) => {
         const countryCard= document.createElement('a');
 countryCard.classList.add('countryCard');
-countryCard.href=`/countryPage.html?name=${country.name.common}`
+countryCard.href=`Mukti123Raj/CountryShowJavaScript/countryPage.html?name=${country.name.common}`
 
 const createCard=`
                 <img src="${country.flags.svg}" alt="CountryFlag">
