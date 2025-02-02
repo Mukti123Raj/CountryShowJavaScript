@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:,300,600,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+    <header class="headerContainer">
+        <div class="headerContent">
+            <h2 class="title">Where in the World?</h2>
+            <p class="darkAndLightMode">
+                <i class="fa-regular fa-moon fa-rotate-by themeChanger" style="--fa-rotate-angle: -20deg;"></i> Dark Mode
+            </p>
+        </div>
+    </header>
+
+    <main class="mainContent">
+        <div class="SelectCountry">
+            <div class="SearchCountry">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="SearchCountryName" id="SearchCountryName" placeholder="Search for a Country">
+            </div>
+            
+                <select name="FileterByRegion" id="FileterByRegion" >
+                    <option hidden>filter by region</option>
+                    <option value="Africa">africa</option>
+                    <option value="America">america</option>
+                    <option value="europe">europe</option>
+                    <option value="Asia">asia</option>
+                    <option value="Oceania">oceania</option>
+                </select>
+            
+        </div>
+
+        <div class="countriesContainer">
+            <a href="" class="countryCard">
+                <img src="https://flagcdn.com/gs.svg" alt="CountryFlag">
+                <div class="countryDetail">
+                    <h3 class="countryName">Country</h3>
+                    <p class="population"><b>Population: </b>10000000</p>
+                    <p class="region"><b>Region: </b>europe</p>
+                    <p class="Capital"><b>Capital: </b>berlin</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

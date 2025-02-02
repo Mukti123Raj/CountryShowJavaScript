@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+    color: var(--text-color);
+}
+body{
+    --background-color: hsl(0, 0%, 98%);
+    --text-color: hsl(0, 0%, 52%);
+    --element-color:hsl(0, 0%, 100%);
+    background-color: var(--background-color);
+}
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+    --element-color:hsl(209, 23%, 22%);
+}
+
+
+.headerContainer{
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.05);
+    background-color: var(--element-color);
+}
+.headerContent{
+    display: flex;
+    max-width: 1152px;
+    align-items: center;
+    justify-content: space-between;
+    margin:  auto;
+    padding: 15px 20px;
+    
+}
+.title{
+    font-size: 20px;
+}
+
+.fa-regular{
+    padding-right: 5px;
+    color: var(--text-color);
+}
+.darkAndLightMode{
+    cursor: pointer;
+}
+
+
+.mainContent{
+    background-color: var(--background-color);
+    padding: 15px 20px;
+    max-width: 1152px;
+    margin: 40px auto;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    width: fit-content;
+    padding: 10px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--element-color);
+}
+.button i{
+    margin-right: 5px;
+    color: var(--text-color);
+}
+
+.CountryDetail{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+img{
+    width: 400px;
+}
+
+h2{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.detail{
+    display: flex;
+    gap: 170px;
+}
+p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.countryBorderCountry{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+a{
+    
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    color: var(--text-color);
+    margin-left: 10px;
+}

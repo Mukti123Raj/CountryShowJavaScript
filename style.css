@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+    
+}
+
+
+
+body{ 
+    --background-color: hsl(0, 0%, 98%);
+    --text-color: hsl(0, 0%, 52%);
+    --element-color:hsl(0, 0%, 100%);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+    --element-color:hsl(209, 23%, 22%);
+}
+.headerContainer{
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.05);
+    background-color: var(--element-color);
+}
+.headerContent{
+    display: flex;
+    max-width: 1152px;
+    align-items: center;
+    justify-content: space-between;
+    margin:  auto;
+    padding: 15px 20px;
+    
+}
+.title{
+    font-size: 20px;
+}
+
+.fa-regular{
+    padding-right: 5px;
+    color: var(--text-color);
+}
+.darkAndLightMode{
+    cursor: pointer;
+}
+
+.mainContent{
+    background-color: var(--background-color);
+    padding: 15px 20px;
+    max-width: 1152px;
+    margin: 20px auto;
+}
+
+
+.SelectCountry{
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+.SearchCountry{
+    background: var(--element-color);
+    width: fit-content;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+
+#SearchCountryName{
+    padding: 10px 150px 10px 20px;
+    border: none;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+#SearchCountryName:hover{
+    text-decoration: none;
+}
+#FileterByRegion{
+    width: 180px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+
+
+.countriesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+a{
+    text-decoration: none;
+}
+.countryCard{
+    background-color: var(--element-color);
+    width: 240px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+}
+.countryCard img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.countryDetail{
+    margin: 20px;
+}
+.countryDetail h3{
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.countryDetail p{
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+.countryDetail b{
+    font-weight: 600;
+}
+
+
+@media (max-width: 700px) {
+    .SelectCountry{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    
+
+    .countriesContainer{
+        justify-content: center;
+    }
+}
